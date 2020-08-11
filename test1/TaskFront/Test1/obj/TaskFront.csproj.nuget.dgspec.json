@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\source\\git\\test1\\Test1\\Test1\\TaskFront.csproj": {}
+    "D:\\source\\git\\test1\\TaskFront\\Test1\\TaskFront.csproj": {}
   },
   "projects": {
-    "D:\\source\\git\\test1\\Test1\\Test1\\TaskFront.csproj": {
+    "D:\\source\\git\\test1\\TaskFront\\Test1\\TaskFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\source\\git\\test1\\Test1\\Test1\\TaskFront.csproj",
+        "projectUniqueName": "D:\\source\\git\\test1\\TaskFront\\Test1\\TaskFront.csproj",
         "projectName": "TaskFront",
-        "projectPath": "D:\\source\\git\\test1\\Test1\\Test1\\TaskFront.csproj",
+        "projectPath": "D:\\source\\git\\test1\\TaskFront\\Test1\\TaskFront.csproj",
         "packagesPath": "C:\\Users\\bd5\\.nuget\\packages\\",
-        "outputPath": "D:\\source\\git\\test1\\Test1\\Test1\\obj\\",
+        "outputPath": "D:\\source\\git\\test1\\TaskFront\\Test1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bd5\\AppData\\Roaming\\NuGet\\NuGet.Config",

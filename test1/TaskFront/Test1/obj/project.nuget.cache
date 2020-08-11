@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9pqqU2KNB2e9p/l8KtXtb5xgqJ6F8MQC4puHSbIcAA1Ps9mUB5g0nAhqbU4Qet4zD6jI47QGw/jfAu2zBcPGgw==",
+  "dgSpecHash": "l6Y4p8q6QZhdRDKi23N32nk9QhW44sW7HumERMpD3VFvbNw7kd8cCYIl1Y9EZy2Zgve71I4QXQKdfpjLpB7nYQ==",
   "success": true,
-  "projectFilePath": "D:\\source\\git\\test1\\Test1\\Test1\\TaskFront.csproj",
+  "projectFilePath": "D:\\source\\git\\test1\\TaskFront\\Test1\\TaskFront.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bd5\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\bd5\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
