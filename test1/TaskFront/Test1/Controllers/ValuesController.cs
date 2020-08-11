@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -16,9 +17,12 @@ namespace Test1.Controllers
         [HttpGet("testget")]
         public ActionResult TestGet([FromQuery] List<string> bzjh)
         {
-            //RabbitAccess access = GetAccess();
-            //DataTable dt = access.GetDataTable("select * from ts_j_basicinfo where well_id='DQtFbHtP6C'");
-            return Ok(bzjh);
+            string str = "('" + String.Join("','", bzjh) + "')";
+            string sql = "select * from ts_j_basicinfo where bzjh in " + str;
+            RabbitAccess access = GetAccess();
+            DataTable dt = access.GetDataTable(sql);
+            Console.WriteLine(dt.Rows.Count);
+            return Ok(dt);
         }
 
         public RabbitAccess GetAccess()

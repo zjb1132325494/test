@@ -18,8 +18,10 @@
                 bzjh: list
             },
             success:function(result){
-                alert(result);
                 console.info(result);
+                for(var i=0;i<result.length;i++){
+                    console.info(result[i].bzjh);
+                }
             }
         });
     </script>
