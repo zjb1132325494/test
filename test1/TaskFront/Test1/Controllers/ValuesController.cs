@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RabbitSqlLib;
+using TaskFront.Common;
 
 namespace Test1.Controllers
 {
@@ -22,7 +23,9 @@ namespace Test1.Controllers
             RabbitAccess access = GetAccess();
             DataTable dt = access.GetDataTable(sql);
             Console.WriteLine(dt.Rows.Count);
-            return Ok(dt);
+            StateInfo state = new StateInfo();
+            state.data=dt;
+            return Ok(state);
         }
 
         public RabbitAccess GetAccess()

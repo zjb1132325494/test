@@ -7,23 +7,26 @@
     <script src="js/jquery-3.5.1.js"></script>
 </head>
 <body>
-    <script>
-        var list = ['X6-40-S738','X4-3-B642','X5-D2-119','X6-40-S739','X2-1-S705'];
-        $.ajax({
-            url: "http://127.0.0.1:52579/api/values/testget",
-            type: "get",
-            dataType:"json",
-            traditional:true,
-            data: {
-                bzjh: list
-            },
-            success:function(result){
-                console.info(result);
-                for(var i=0;i<result.length;i++){
-                    console.info(result[i].bzjh);
-                }
-            }
-        });
-    </script>
+    <table id="table1">
+        
+    </table>
 </body>
+<script>
+    var list = ['X6-40-S738','X4-3-B642','X5-D2-119','X6-40-S739','X2-1-S705'];
+    $.ajax({
+        url: "http://127.0.0.1:52579/api/values/testget",
+        type: "get",
+        dataType:"json",
+        traditional:true,
+        data: {
+            bzjh: list
+        },
+        success:function(result){
+            console.info(result.data);
+            for(var i=0;i<result.data.length;i++){
+                console.info(result.data[i].bzjh);
+            }
+        }
+    });
+</script>
 </html>
