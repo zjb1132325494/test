@@ -22,9 +22,19 @@ namespace Test1.Controllers
             string sql = "select * from ts_j_basicinfo where bzjh in " + str;
             RabbitAccess access = GetAccess();
             DataTable dt = access.GetDataTable(sql);
-            Console.WriteLine(dt.Rows.Count);
             StateInfo state = new StateInfo();
             state.data=dt;
+            return Ok(state);
+        }
+
+        [HttpPost("testpost")]
+        public ActionResult TestPost([FromForm] PageModel pageModel)
+        {
+            string sql = "select * from (select b.*,rownum rowno from ts_j_basicinfo b) where rowno between " + pageModel.getStartNum() + " and " + pageModel.getEndNum();
+            RabbitAccess access = GetAccess();
+            DataTable dt = access.GetDataTable(sql);
+            StateInfo state = new StateInfo();
+            state.data = dt;
             return Ok(state);
         }
 

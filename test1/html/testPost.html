@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.20.0-0/axios.js"></script>
+</head>
+<body>
+    
+</body>
+<script>
+    let param = new URLSearchParams();
+    param.append('page',2);
+    param.append('limit',10);
+    axios.post('http://127.0.0.1:52579/api/values/testpost',param)
+        .then(function(result){
+            console.info(result.data);
+        });
+</script>
+</html>
